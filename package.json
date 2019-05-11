@@ -1,6 +1,6 @@
 {
   "name": "@pureproxy/pureproxy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pure, intercepting proxy server designed with simplicity and extensibility in mind",
   "main": "lib/index.js",
   "directories": {
