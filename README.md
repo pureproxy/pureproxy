@@ -7,7 +7,7 @@ PureProxy is a simple but very flexible, streaming proxy server. The main purpos
 
 ## How To Install
 
-You need to install this library as a dependency like so:
+You need to install this library as a dependency like this:
 
 ```
 $ npm install @pureproxy/pureproxy
@@ -79,3 +79,5 @@ server.listen(8080)
 **Q: How fast is it?** - Have a look at the code. It is as fast as it practically possible. This module has no external dependencies and relies on Node's native bindings. You can easily use the Node's cluster API to scale it to as many CPU cores as you have.
 
 **Q: How stable is it?** - This project is relatively young but so far there are no issues. It is unlikely to see any significant issues due to the size of the library. It is tiny.
+
+**Q: Can I intercept TLS/SSL?** - You can intercept any traffic but it will be encrypted and compressed (i.e. raw). To intercept the traffic in clear text use [mitmproxy](https://github.com/pureproxy/mitmproxy) which is based this project.
