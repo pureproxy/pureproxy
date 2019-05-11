@@ -1,0 +1,31 @@
+{
+  "name": "@pureproxy/pureproxy",
+  "version": "1.0.0",
+  "description": "Pure, intercepting proxy server designed with simplicity and extensibility in mind",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pureproxy/pureproxy.git"
+  },
+  "keywords": [
+    "proxy",
+    "server",
+    "stream",
+    "http",
+    "https",
+    "websocket",
+    "websockets"
+  ],
+  "author": "pdparchitect",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pureproxy/pureproxy/issues"
+  },
+  "homepage": "https://github.com/pureproxy/pureproxy#readme"
+}
