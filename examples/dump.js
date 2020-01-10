@@ -3,10 +3,10 @@ const stream = require('stream')
 const PureProxy = require('../lib/index')
 
 const server = new class extends PureProxy {
-    getClient(hostname, port, context) {
+    async getClient(hostname, port, context) {
         // get the original client
 
-        const client = super.getClient(hostname, port, context)
+        const client = await super.getClient(hostname, port, context)
 
         // return a duplex stream (like sockets) to monitor all data in transit
 
