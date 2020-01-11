@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/pureproxy/pureproxy/issues"
   },
-  "homepage": "https://github.com/pureproxy/pureproxy#readme"
+  "homepage": "https://github.com/pureproxy/pureproxy#readme",
+  "dependencies": {
+    "http-parser-js": "^0.5.2"
+  }
 }
