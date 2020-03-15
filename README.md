@@ -72,12 +72,12 @@ server.listen(8080)
 
 ## FAQ
 
-**Q: What is the point of this?** - Believe it or not there is lack of simple proxy servers for Node. I did look around and either all of them were way too complicated for their own good or they had a number of issues impossible to resolve without serious time investment.
+**Q: What is the point of this?** - Believe it or not, there is a lack of simple proxy servers for Node. I did look around and either all of them were way too complicated for their own good or they had a number of issues impossible to resolve without some serious time investment.
 
-**Q: Why the weird API?** - The server is based around Node's streaming API. Sockets in Node are Duplex streams. Data is never cached, buffered or transformed as it passes the stream. TIn order to manipulate or observe the stream we simply need to create Duplex streams hence why the API may look a bit weird.
+**Q: Why the weird API?** - The server is based around Node's streaming API. Sockets in Node are Duplex streams. Data is never cached, buffered or transformed as it passes the stream. In order to manipulate or observe the stream we simply need to create Duplex streams hence why the API may look a bit weird.
 
 **Q: How fast is it?** - Have a look at the code. It is as fast as it practically possible. This module has no external dependencies and relies on Node's native bindings. You can easily use the Node's cluster API to scale it to as many CPU cores as you have.
 
 **Q: How stable is it?** - This project is relatively young but so far there are no issues. It is unlikely to see any significant issues due to the size of the library. It is tiny.
 
-**Q: Can I intercept TLS/SSL?** - You can intercept any traffic but it will be encrypted and compressed (i.e. raw). To intercept the traffic in clear text use [mitmproxy](https://github.com/pureproxy/mitmproxy) which is based this project.
+**Q: Can I intercept TLS/SSL?** - You can intercept any traffic but it will be encrypted and compressed (i.e. raw). To intercept the traffic in clear text use mitmproxy which is based on this project.
