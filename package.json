@@ -28,7 +28,7 @@
   },
   "scripts": {
     "build": "run-s build:*",
-    "build:types": "npx -p typescript tsc --declaration --emitDeclarationOnly --outDir types",
+    "build:types": "npx -p typescript tsc",
     "format": "run-s format:*",
     "format:pkg": "npx format-package -w",
     "format:src": "npx prettier -w examples/ lib/",
