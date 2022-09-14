@@ -38,4 +38,9 @@ const server = new (class extends PureProxy {
   }
 })()
 
-server.listen(8080)
+server
+  .listen(8080)
+  .then(() => {
+    console.log(`Listening on 8080`)
+  })
+  .catch(console.error)
