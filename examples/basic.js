@@ -1,4 +1,4 @@
-const PureProxy = require('../lib/index')
+import PureProxy from '../lib/index.js'
 
 const server = new PureProxy()
 

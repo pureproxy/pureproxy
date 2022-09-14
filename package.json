@@ -2,17 +2,16 @@
   "name": "@pureproxy/pureproxy",
   "version": "1.1.1",
   "description": "Pure, intercepting proxy server designed with simplicity and extensibility in mind",
-  "main": "lib/index.js",
-  "directories": {
-    "lib": "lib"
-  },
-  "scripts": {
-    "test": "true"
-  },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pureproxy/pureproxy.git"
   },
+  "bugs": {
+    "url": "https://github.com/pureproxy/pureproxy/issues"
+  },
+  "homepage": "https://github.com/pureproxy/pureproxy#readme",
+  "author": "pdparchitect",
   "keywords": [
     "proxy",
     "server",
@@ -22,13 +21,27 @@
     "websocket",
     "websockets"
   ],
-  "author": "pdparchitect",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/pureproxy/pureproxy/issues"
+  "type": "module",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
   },
-  "homepage": "https://github.com/pureproxy/pureproxy#readme",
+  "scripts": {
+    "format": "run-s format:*",
+    "format:pkg": "npx format-package -w",
+    "format:src": "npx prettier -w examples/ lib/",
+    "install": "npx husky install",
+    "lint": "true",
+    "test": "true"
+  },
   "dependencies": {
     "http-parser-js": "^0.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.15",
+    "eslint": "8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-require-path-exists": "^1.1.9",
+    "npm-run-all": "^4.1.5"
   }
 }
