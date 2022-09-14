@@ -32,8 +32,8 @@
     "format": "run-s format:*",
     "format:pkg": "npx format-package -w",
     "format:src": "npx prettier -w examples/ lib/",
-    "install": "npx husky install",
     "lint": "eslint lib/",
+    "setup": "husky install",
     "test": "true"
   },
   "types": "types/index.d.ts",
@@ -41,6 +41,7 @@
     "http-parser-js": "^0.5.2"
   },
   "devDependencies": {
+    "husky": "^8.0.1",
     "@types/node": "^18.7.15",
     "eslint": "8.17.0",
     "eslint-config-prettier": "^8.5.0",
