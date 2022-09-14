@@ -27,13 +27,16 @@
     "lib": "lib"
   },
   "scripts": {
+    "build": "run-s build:*",
+    "build:types": "npx -p typescript tsc --declaration --emitDeclarationOnly --outDir types",
     "format": "run-s format:*",
     "format:pkg": "npx format-package -w",
     "format:src": "npx prettier -w examples/ lib/",
     "install": "npx husky install",
-    "lint": "true",
+    "lint": "eslint lib/",
     "test": "true"
   },
+  "types": "types/index.d.ts",
   "dependencies": {
     "http-parser-js": "^0.5.2"
   },
