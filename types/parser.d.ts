@@ -1,1 +1,1 @@
-export {};
+export { HTTPParser, methods };

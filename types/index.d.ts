@@ -17,7 +17,7 @@ export class PureProxy extends net.Server {
     createHttpRequestParser(): HTTPParserEmitter;
     createHttpResponseParser(): HTTPParserEmitter;
     getHttpHeader(headers: any, name: any): any;
-    getClient(hostname: any, port: any): Promise<any>;
+    getClient(hostname: any, port: any, context: any): Promise<any>;
     listen(options: any): Promise<any>;
 }
 export default PureProxy;
