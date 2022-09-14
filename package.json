@@ -1,6 +1,6 @@
 {
   "name": "@pureproxy/pureproxy",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Pure, intercepting proxy server designed with simplicity and extensibility in mind",
   "license": "MIT",
   "repository": {
